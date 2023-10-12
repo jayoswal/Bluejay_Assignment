@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Data</title>
+</head>
+<body>
+    <h1>File Data</h1>
+    {% if not data.empty %}
+        {{ data.to_html|safe }}
+    {% else %}
+        <p>No data to display.</p>
+    {% endif %}
+</body>
+</html>
